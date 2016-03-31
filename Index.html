@@ -1,0 +1,175 @@
+<html>
+	<head>
+		<!--Renomeando o título da página-->
+		<title>Teste do Mercado</title>
+			
+
+		<!--Fazendo o link dos arquivos css-->		
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+		<!--Fazendo o link com a biblioteca javascript jquery-->				
+		<script src="js/jquery.min.js"></script>
+
+			
+	</head>		
+		
+	<style>
+		
+		.InputTexto{
+			width:200px;
+			height:30px;
+			border-size:2px;
+			border-color:#0000FF;					
+		}
+
+	</style>
+
+	
+	<body>
+		<!--Container para o cabecalho-->
+		<div id="cabecalho">
+			<h1>Negociação de Mercadorias</h1>
+
+		</div>
+	
+		<!--Container para o menu-->
+		<div id="menu">
+			<div id="link1" class="link"> Inserir Negócio </div><br>	
+			<div id="link2" class="link"> Consultar Negócio </div><br>			
+		</div>
+	
+		<!--Container para o conteudo-->
+		<div id="conteudo">
+			Conteúdo
+		</div>
+
+		<!--Pular linhas-->
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>		
+				
+		<!--Tabela com as informações necessárias-->
+		<div id="div_indices" style="display:none">
+			
+			<!--Pular linhas-->
+			<br/>
+				
+			<!--Criando um formulário para as entrada-->		
+			<form name="indices"  method="post">
+				
+				<!--Centralizando as informações-->
+				<p align="center">
+					Dados de Entrada
+					</br>
+						
+					<!--Entradas-->			
+					Codigo da Mercadoria:
+					<input type="text" id="codigo" size="10">
+					</br>
+					
+				
+					Tipo da Mercadoria:
+					<input type="text" id="tipo" size="20"> 
+					</br>	
+				
+					Nome da Mercadoria:
+					<input type="text" id="nome" size="40">
+					</br>
+				
+					Quantidade:
+					<input type="text" id="quantidade" size="10">
+					</br>	
+				
+					Preço:
+					<input type="text" id="preco" size="20">
+					</br>					
+
+
+					Tipo de Negócio:					
+					<select>
+						<option id="negocio" value="Compra"> Compra </option>
+						<option id="negocio" value="Venda"> Venda </option>									
+					</selected>	
+
+					<br/>
+					<br/>								
+						<input id="submit"type="submit" value="submit"/>
+					<br/>
+					<br/>
+					
+					
+				</p>
+							
+			</form>
+		</div>
+			
+			
+	</body>
+	
+		
+	<!--Iniciando comandos do script Jquery-->
+	<script>
+				
+		$(function(){
+
+			$("#link1").click(function(){
+				
+				//Variavel para armazenar div				
+				var div = $("#div_indices").html();
+				
+				//Atribuir a tabela para a div do conteudo
+				$("#conteudo").html(indices);
+				
+				//Exibir a tabela que foi armazenada na div do conteudo
+				$("#div_indices").show();				
+				
+				
+			});
+			
+			
+
+			$("#link2").click(function(){
+				
+				//Criando um alerta no qual o usuário precisa clicar para voltar a página
+				alert('Teste de msg');
+
+			});
+
+			
+			
+			$("#submit").click(function(){
+				
+				var nome = $("#codigo").html();
+
+				if(nome == "" ){
+					alert("Algo está errado");
+					$("codigo").show();
+
+					return false;					
+	
+				}
+
+			});
+
+		
+		})
+
+		
+	</script>
+
+	
+</html>
+
