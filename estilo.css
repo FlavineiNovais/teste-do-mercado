@@ -1,0 +1,65 @@
+#cabecalho{
+	width:1024px;
+	height:90px;
+	background-color:#000000;
+	color:white;
+	text-align:center;		
+	padding:5px;
+			
+			
+	}
+		
+		
+#menu{
+	float:left;
+	height:300px;
+	width:100px;
+	background-color:#4169E1;
+	padding:5px;
+
+}
+
+#conteudo{
+	float:left;
+	width:914px;
+	background-color:#F0F0F0;
+	padding:5px;
+	height:300px;
+}
+
+#rodape{
+	float:top;
+	height:20px;
+	width:1024px;
+	background-color:#3468c3;
+	color:write;
+	text-align:center;
+	padding:5px;
+			
+}	
+		
+			
+.link{
+	cursor:pointer;
+	nackground-color:#64676C;
+	border:1px solid #d4d4d4;
+	border-radius:4px;
+	margin:4px;
+	padding:5px;
+	color:#FFFFFF;
+}
+
+.link:hover{
+	cursor:pointer;
+	background-color:#191970;
+	border:1px solid #d4d4d4;
+	border-radius:4px;
+	margin:4px;
+	padding:5px;
+	color:#FFFFFF;
+}
+
+				
+
+
+
